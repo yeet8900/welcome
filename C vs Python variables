@@ -1,0 +1,16 @@
+In C, variables are locations. For example, let's say
+Variable names in C are just references to location, at compile time the variables are replaced with memory locations.
+See 
+https://stackoverflow.com/questions/14612314/how-are-variable-names-stored-in-memory-in-c#:~:text=Variable%20names%20don%27t%20exist,them%20into%20native%20machine%20instructions.
+Essentially, there exists a mapping between a location and the variable name, and at compile time, the value of the memory location is taken directly instead of the variable.
+int x =10;
+int y =11;
+ y=x; // what this statement does is that it changes the value that exists "in" y's location to the value that exists in x's location
+ 
+ whereas in python,
+  x=10
+  y=11
+  y=x
+  x and y are just tags pointing to the two objects (10 and 11). They are not memory locations
+ 
+ 
